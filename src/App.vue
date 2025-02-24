@@ -107,6 +107,27 @@
 
       <div class="parteContatos">
         <img class="imagemContratos" src="./assets/contatosImage.png" alt="Contatos">
+        <div class="infosContato">
+        
+          <h1 class="tituloContato">Entre em contato!</h1>
+          
+          <div class="local">
+            <p class="localContato"></p>
+          </div>
+          
+          <div class="email">
+            <p class="emailContato"></p>
+          </div>
+          
+          <div class="horario">
+            <p class="horarioContato"></p>
+          </div>
+          
+          <div class="telefone">
+            <p class="telefoneContato"></p>
+          </div>
+        
+        </div>
       </div>
       
       <footer class="copyw">
@@ -424,6 +445,7 @@ html, body {
 
     .footerInfo {
       color: #9f5621;
+      width: 10%;
       
       .textCopy {
         font-weight: 400;
@@ -432,6 +454,7 @@ html, body {
 
     .footerInfo2 {
       width: 50%;
+      font-size: 18px;
 
       .tVerde {
         color:#2a7765;
