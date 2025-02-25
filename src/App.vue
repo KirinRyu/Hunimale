@@ -478,10 +478,6 @@ html, body {
         margin-top: 8px;
         margin-right: 15px;
       }
-
-      .emailContato {
-
-      }
     }
     .horario {
       position: absolute;
@@ -514,10 +510,6 @@ html, body {
       .iconeTelefone {
         margin-top: 8px;
         margin-right: 15px;
-      }
-
-      .telefoneContato {
-
       }
     }
 
