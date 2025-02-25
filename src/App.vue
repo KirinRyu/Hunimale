@@ -1,5 +1,7 @@
-<script>
-
+<script setup>
+function handleClick() {
+  window.open('/Cardápio.pdf', '_blank')
+}
 </script>
 
 <template>
@@ -102,7 +104,9 @@
       <div class="parteCardapio">
         <img class="card" src="./assets/secaoCardapio.png" alt="acessar cardapio" draggable="false">
         <!--<span class="acessoCard">Ver Cardápio</span>-->
-        <span class="acessoCard">Ver o Cardápio</span>
+        <span 
+         @click="handleClick"
+         class="acessoCard">Ver o Cardápio</span>
       </div>
 
       <div class="parteContatos">
@@ -112,19 +116,33 @@
           <h1 class="tituloContato">Entre em contato!</h1>
           
           <div class="local">
-            <p class="localContato"></p>
+            <font-awesome-icon icon="location-dot" class="iconeLocal" />
+            <p class="localContato">
+              Av. Washington Luís, 389 - Boqueirão, Santos - SP, 11055-001
+            </p>
           </div>
           
           <div class="email">
-            <p class="emailContato"></p>
+            <font-awesome-icon icon="envelope" class="iconeEmail" />
+            <p class="emailContato">Hunimale@cafesantos.com.br</p>
           </div>
           
           <div class="horario">
-            <p class="horarioContato"></p>
+            <font-awesome-icon icon="clock" class="iconeHorario" />
+            <div class="horarioContato">
+              <p>De terça a sexta das 10h00 às 18h00 <br> De sábado e domingo das 9h00 às 19h00</p>
+            </div>
           </div>
           
           <div class="telefone">
-            <p class="telefoneContato"></p>
+            <font-awesome-icon icon="phone-flip" class="iconeTelefone" />
+            <p class="telefoneContato">(13) 99551-2717 - Horário Comercial</p>
+          </div>
+
+          <div class="redes">
+            <font-awesome-icon class="insta" icon="fa-brands fa-instagram" />
+            <font-awesome-icon class="whats" icon="fa-brands fa-whatsapp" />
+            <font-awesome-icon class="tiktok" icon="fa-brands fa-tiktok" />
           </div>
         
         </div>
@@ -413,19 +431,128 @@ html, body {
     user-select: none;
     position: absolute;
     left: -5%;
-    top: 280%;
+    top: 290%;
     width: 100%;
+    color: #fff4e8;
 
     .imagemContratos {
       width: 100%;
       height: auto;
+    }
+
+    .tituloContato {
+      position: absolute;
+      top: 10%;
+      left: 55.5%;
+      font-family: 'Kavoon', serif;
+    }
+
+    .local {
+      position: absolute;
+      top: 20%;
+      left: 56%;
+      display: flex;
+      flex-direction: row;
+      font-size: 25px;
+      font-family: 'Roboto', serif;
+
+      .iconeLocal {
+        margin-top: 8px;
+        margin-right: 15px;
+      }
+
+      .localContato:hover {
+        text-decoration-line: underline;
+      }
+    }
+    .email {
+      position: absolute;
+      top: 28%;
+      left: 56%;
+      display: flex;
+      flex-direction: row;
+      font-size: 25px;
+      font-family: 'Roboto', serif;
+
+      .iconeEmail {
+        margin-top: 8px;
+        margin-right: 15px;
+      }
+
+      .emailContato {
+
+      }
+    }
+    .horario {
+      position: absolute;
+      top: 36%;
+      left: 56%;
+      display: flex;
+      flex-direction: row;
+      font-size: 25px;
+      font-family: 'Roboto', serif;
+
+      .iconeHorario {
+        margin-top: 28px;
+        margin-right: 15px;
+      }
+
+      .horarioContato {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .telefone {
+      position: absolute;
+      top: 48%;
+      left: 56%;
+      display: flex;
+      flex-direction: row;
+      font-size: 25px;
+      font-family: 'Roboto', serif;
+
+      .iconeTelefone {
+        margin-top: 8px;
+        margin-right: 15px;
+      }
+
+      .telefoneContato {
+
+      }
+    }
+
+    .redes {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      position: absolute;
+      top: 55%;
+      left: 63%;
+      font-size: 40px;
+      margin-top: 3%;
+      gap: 70%;
+
+      .tiktok:hover {
+        color: #34F2F8;
+        transition: all ease 0.6s;
+      }
+
+      .insta:hover {
+        color: #E93693;
+        transition: all ease 0.6s;
+      }
+
+      .whats:hover {
+        color: #39DE48;
+        transition: all ease 0.6s;
+      }
     }
   }
 
   // Parte 6
   .copyw {
     position: absolute;
-    top: 405%;
+    top: 415%;
     left: -4%;
     user-select: none;
     background-color: #fff4e8;
