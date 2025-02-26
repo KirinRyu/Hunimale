@@ -460,10 +460,6 @@ html, body {
         margin-top: 8px;
         margin-right: 15px;
       }
-
-      .localContato:hover {
-        text-decoration-line: underline;
-      }
     }
     .email {
       position: absolute;
@@ -603,6 +599,18 @@ html, body {
 
 //Monitor Notebook
 @media (max-width: 1600px) {
+
+  .logo {
+    margin-right: 10% !important
+  }
+
+  .opcoes {
+    position: relative;
+    top: 30% !important;
+    height: 43% !important;
+  }
+
+  // PARTE 1
   .Home {
     position: relative;
     left: -8.3% !important;
@@ -625,6 +633,80 @@ html, body {
       width: auto;
       z-index: 1;
     }
+  }
+
+  // PARTE 2
+  .About1 {
+
+    .row {
+
+      .left-about {
+        width: 29% !important;
+      
+        .imagemCao {
+          width: 150% !important;
+        }
+      }
+
+      .right-about {
+        font-size: 18px !important;
+      }
+    }
+  }
+
+  // PARTE 3
+  .About2 {
+    position: absolute;
+    top: 225% !important;
+
+    .row {
+
+      .area-texto {
+        padding-top: 40px !important;
+        padding-bottom: 10px !important;
+        font-size: 18px !important;
+      }
+
+      .imagemCaoConfuso {
+        width: 85% !important;
+      }
+    }
+  }
+
+  // PARTE 4
+  .parteCardapio {
+    top: 125% !important;
+
+    .acessoCard {
+      font-size: 18px !important;
+    }
+  }
+
+  // PARTE 5
+  .parteContatos {
+    .local {
+      font-size: 23px !important;
+    }
+
+    .email {
+      font-size: 23px !important;
+      top: 32% !important;
+    }
+
+    .horario {
+      font-size: 23px !important;
+      top: 39% !important;
+    }
+
+    .telefone {
+      font-size: 23px !important;
+      top: 52% !important;
+    }
+
+    .redes {
+      top: 60% !important;
+    }
+
   }
 }
 </style>
