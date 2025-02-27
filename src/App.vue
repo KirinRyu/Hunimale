@@ -26,6 +26,14 @@ function handleClick() {
     <img class="fundoHome" src="./assets/Home.png" alt="Home" draggable="false">
     <img class="infoHome" src="./assets/bolaBranca.png" alt="info da Home" draggable="false">
     <img class="imagemCafes" src="./assets/cafes1.png" alt="cafes" draggable="false">
+    <div class="areaTextoHome">
+      <h2>Um Café para Você e Seu Melhor Amigo!</h2>
+      <p>
+        No Hunimale Café, os momentos especiais devem ser compartilhados com quem amamos, incluindos nossos pets! Aqui 
+        oferecemos um ambiente acolhedor onde você e seu companheiro de quatro patas podem desfrutar de deliciosas refeições juntos!
+      </p>
+      <h2>Venha nos visitar!</h2>
+    </div>
   </div>
 
   <div class="About1">
@@ -278,16 +286,38 @@ html, body {
     .imagemCafes {
       user-select: none;
       position: absolute;
-      top: 28%;
+      top: 22%;
       right: 11%;
       border-radius: 50px;
-      height: 35%;
+      height: 45%;
       width: auto;
       z-index: 1;
       box-shadow:
         0 0 60px 40px #683917a3,
         0 0 100px 60px rgba(6, 6, 6, 0.101),
         0 0 140px 80px rgba(255, 227, 208, 0.122);
+    }
+
+    .areaTextoHome {
+      position: absolute;
+      left: 12%;
+      top: 30%;
+      color: #773e18;
+      text-align: center;
+      width: 25%;
+      z-index: 2;
+
+      h2 {
+        font-size: 32px;
+        font-family: 'Kavoon', serif;
+      }
+
+      p {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        font-size: 22px;
+        font-family: 'Roboto', serif;
+      }
     }
   }
 
@@ -617,6 +647,28 @@ html, body {
     top: 0;
     width: 100vw;
 
+    .areaTextoHome {
+      position: absolute;
+      left: 16% !important;
+      top: 30% !important; 
+      color: #773e18;
+      text-align: center;
+      width: 25%;
+      z-index: 2;
+
+      h2 {
+        font-size: 28px !important;
+        font-family: 'Kavoon', serif;
+      }
+
+      p {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        font-size: 18px !important;
+        font-family: 'Roboto', serif;
+      }
+    }
+
     .fundoHome {
       position: relative;
       height: 200px;
@@ -627,9 +679,9 @@ html, body {
 
     .infoHome {
       position: absolute;
-      top: 10% !important;
-      left: 5% !important;
-      height: 75% !important;
+      top: 13% !important;
+      left: 8% !important;
+      height: 65% !important;
       width: auto;
       z-index: 1;
     }
@@ -664,7 +716,7 @@ html, body {
       .area-texto {
         padding-top: 40px !important;
         padding-bottom: 10px !important;
-        font-size: 18px !important;
+        font-size: 22px !important;
       }
 
       .imagemCaoConfuso {
